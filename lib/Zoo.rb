@@ -24,5 +24,16 @@ class Zoo
       animal.species
   end
 
-  
+  def find_by_species(species)
+    if species == species
+      animals.species
+    end
+  end.uniq
+
+  def animal_nicknames
+    animals.map do |animal_instances|
+      animal_instances.nickname
+    end
+  end
+
 end
